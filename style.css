@@ -8,8 +8,8 @@ body {
 
 .header {
   display: flex;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #1F2937;
@@ -42,4 +42,53 @@ a {
 
 .right-links {
   margin-left: auto;
+}
+
+.content_1 {
+  display: flex;
+  flex: 1 1 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #1F2937;
+
+}
+
+.hero-text {
+  font-size: 48px;
+  font-weight: 700;
+  color: #F9FAF8;
+}
+
+.hero-subtext {
+  font-size: 16px;
+  color: #E5E7EB;
+  font-weight: 300;
+}
+
+/* refactor into a base button class once there are multiple buttons */
+.hero-button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem 0;
+}
+
+.img-container {
+  padding-left: 0 50px;
+  margin-left: auto;
+  
+}
+
+/* 
+there's gotta be a better way than hardcoding this, right?
+divided original image dimensions by 10 to keep aspect ratio 
+*/
+img {
+  width: 370px;
+  height: 185px;
 }
